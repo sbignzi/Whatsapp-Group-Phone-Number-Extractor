@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 # paste complete div element having class infinite-list
 html = '''
-# paste your  div element
+paste div element
 '''
 
 
@@ -22,7 +22,7 @@ def main():
     number_of_contact = 0
 
     # BeautifulSoup object html content as argument
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html)
 
     # for loop goes through every span in html content
     for i in soup.find_all('span'):
@@ -31,8 +31,8 @@ def main():
             print (concatenate(i.get_text()))
             number_of_contact += 1
 
-    print "The Total Number of Contacts are %s" % (number_of_contact,)
+    print ("The Total Number of Contacts are %s" % (number_of_contact,))
 
 
 if __name__ == "__main__":
-    main()
+	main()
