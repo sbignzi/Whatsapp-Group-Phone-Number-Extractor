@@ -1,12 +1,13 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# import BeautiufulSoup class from bs4 package
+# Author : Shubham Aggarwal
+# Handle : shuboy2014
+# Modified Date : 06-11-2016
 from bs4 import BeautifulSoup
 
 
-# paste complete div element having class infinite-list
+# paste complete div element having class infinite-list at line number 10
 html = '''
-# paste your  div element
+
 '''
 
 
@@ -14,7 +15,7 @@ html = '''
 #  [ +91 99956 96485 ] to [ +919995696845 ]
 def concatenate(contact):
     contact = contact.split()
-    return "".join(contact)
+    return u"".join(contact)
 
 
 def main():
